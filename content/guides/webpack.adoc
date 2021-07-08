@@ -184,7 +184,7 @@ So your build's `:target` will still be `:bundle` (not `:webworker`), but you
 will tell your bundler to build a webworker. For example, with webpack you add the
 `--target=webworker` argument to your `:bundle-cmd` entries.
 
-You also need to define `cljs.core/*global*` as `"self"` (as opposed to 
+You also need to define `cljs.core/\*global*` as `"self"` (as opposed to 
 `"window"` in browser builds).
 
 An example `build-webworker.edn` might look like:
